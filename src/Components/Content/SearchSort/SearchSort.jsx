@@ -22,7 +22,7 @@ export const SearchSort = (props) => {
         <Select defaultValue={city} style={{ width: 120 }} onChange={setCity}>
           {props.city.map((c) => {
             return (
-              <Option id={c.id} value={c.value}>
+              <Option key={c.id} value={c.value}>
                 {c.name}
               </Option>
             );
@@ -37,7 +37,7 @@ export const SearchSort = (props) => {
         >
           {props.district.map((d) => {
             return (
-              <Option id={d.id} value={d.value}>
+              <Option key={d.id} value={d.value}>
                 {d.name}
               </Option>
             );
@@ -63,7 +63,7 @@ export const SearchSort = (props) => {
         <Select defaultValue={rooms} style={{ width: 120 }} onChange={setRooms}>
           {props.rooms.map((r) => {
             return (
-              <Option id={r.id} value={r.value}>
+              <Option key={r.id} value={r.value}>
                 {r.amount}
               </Option>
             );

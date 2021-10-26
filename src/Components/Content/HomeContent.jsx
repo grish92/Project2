@@ -1,9 +1,8 @@
 import { Layout } from "antd";
-import React, { useState } from "react";
-import { createRemoveFavorite } from "../../ReduxStore/action";
-import { Apartments } from "./Apartments/Apartments";
+import React from "react";
+
 import { ApartmentsContainer } from "./Apartments/ApartmentsContainer";
-import { SearchSort } from "./SearchSort/SearchSort";
+
 import { SearchSortContainer } from "./SearchSort/SearchSortContainer";
 const { Footer, Content } = Layout;
 

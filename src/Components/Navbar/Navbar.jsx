@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-// import "../style.css";
+import "../../style.css";
 import apartament_logo from "../../images/apartament_logo.png";
 
 import {
@@ -8,11 +8,11 @@ import {
   LogoutOutlined,
   MailOutlined,
   UnlockOutlined,
-} from "@ant-design/icons"; 
-import {Menu, Dropdown, Layout, message, Space } from "antd";
+} from "@ant-design/icons";
+import { Menu, Dropdown, Layout, message, Space } from "antd";
 
 export const NavBar = (props) => {
-  console.log(props)
+  console.log(props);
   function handleMenuClick(e) {
     message.info("Click on menu item.");
     console.log("click", e);
@@ -38,8 +38,12 @@ export const NavBar = (props) => {
     <>
       <Layout className="layout">
         <Menu className="menu" theme="dark" mode="horizontal">
-          <Menu.Item style={{backgroundColor:"transparent"}}>
-            <img style={{ width: "70px", height: "45px" }} src={apartament_logo} alt="" />
+          <Menu.Item style={{ backgroundColor: "transparent" }}>
+            <img
+              style={{ width: "70px", height: "45px" }}
+              src={apartament_logo}
+              alt=""
+            />
           </Menu.Item>
           {props.menuItems.map((menu) => (
             <Menu.Item key={menu.id}>

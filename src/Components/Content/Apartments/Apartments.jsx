@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card } from "antd";
 import { Link } from "react-router-dom";
 // import { useSelector, useDispatch } from "react-redux";
@@ -10,15 +10,15 @@ const gridStyle = {
   textAlign: "center",
 };
 
-
 export const Apartments = (props) => {
-    console.log(props)
+  console.log(props);
   return (
     <>
       {props.apartments.map((apartment) => {
         return (
           <Card.Grid hoverable={false} style={gridStyle} key={apartment.id}>
             <Card
+              
               title={"APARTMENT CODE - " + apartment.id}
               style={{ width: 320 }}
             >
@@ -32,7 +32,9 @@ export const Apartments = (props) => {
               <p>{apartment.location}</p>
               <p>{currencySign(apartment.price)}</p>
               <HeartTwoTone
-                twoToneColor={props.favoritesList.some((e) => e.id === apartment.id)}
+                twoToneColor={props.favoritesList.some(
+                  (e) => e.id === apartment.id
+                )}
                 onClick={() => props.toggleClick(apartment)}
               />
             </Card>

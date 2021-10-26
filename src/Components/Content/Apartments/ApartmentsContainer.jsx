@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import { createAddFavorite, createDeleteFavorite, createRemoveFavorite } from "../../../ReduxStore/action"
+
 import { Apartments } from "./Apartments"
 
 let mapStateToProps=(state)=>{

@@ -1,17 +1,67 @@
 .login-form {
-    min-width: 330px;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .login-form-forgot {
-    float: right;
-  }
-  .ant-col-rtl .login-form-forgot {
-    float: left;
-  }
-  .login-form-button {
-    width: 100%;
-  }
+  min-width: 330px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form-forgot {
+  float: right;
+}
+.ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.registration-form {
+  min-width: 500px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-65%, -55%);
+}
+.registration-form-button {
+  width: 100%;
+}
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+.searchSort {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: rgb(212, 212, 212);
+  height: 70px;
+  margin: 15px;
+  margin-left: 23px;
+  border-radius: 15px;
+}
+
+.login_page_logo {
+  overflow: hidden;
+  height: 730px;
+  background: url(../src/images/login.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.menu {
+  height: 50px;
+}

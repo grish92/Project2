@@ -1,4 +1,4 @@
-import {ADD_FAVORITE, DELETE_ALL, FILTER_APARTMENTS, REMOVE_FAVORITE} from '../action.js'
+import {ADD_FAVORITE, DELETE_ALL,  REMOVE_FAVORITE} from '../action.js'
 
 let initialState = {
   City: [

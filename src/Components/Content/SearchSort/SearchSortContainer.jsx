@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import { filterApartment } from "../../../ReduxStore/action"
+
 import { SearchSort } from "./SearchSort"
 
 let mapStateToProps=(state)=>{
