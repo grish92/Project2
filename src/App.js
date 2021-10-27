@@ -11,6 +11,8 @@ import {ContentContainer} from "./Components/Content/ContentContainer";
 import { Route } from "react-router";
 
 import { FavoritesContainer } from "./Components/Favorites/FavoritesContainer";
+import { SingleApartmentPageContainer } from "./Components/SingleApartmentPage/SingleApartmentPageContainer";
+import { MyProfile } from "./Components/MyProfile/MyProfile";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <div>
         <Route path="/home"  render={()=><ContentContainer/>} />
       <Route path="/favorites" render={()=><FavoritesContainer/>} />
+      <Route path="/apartment/:id" render={()=><SingleApartmentPageContainer/>} />
+      <Route path="/myprofile" render={()=><MyProfile/>} />
         </div>
         {/* <HomeContent/> */}
         {/* <Routes/> */}
