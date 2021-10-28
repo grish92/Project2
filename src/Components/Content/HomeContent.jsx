@@ -7,7 +7,7 @@ import { SearchSortContainer } from "./SearchSort/SearchSortContainer";
 const { Footer, Content } = Layout;
 
 export const HomeContent = (props) => {
-  console.log(props)
+  console.log(props);
 
   const handleChange = (city, district, price, rooms) => {
     let filteredApartments = [...props.apartments];
@@ -31,25 +31,23 @@ export const HomeContent = (props) => {
         (e) => e.rooms === parseInt(rooms)
       );
     }
-console.log(filteredApartments)
-props.filteredApartment.push(...filteredApartments)
-
+    console.log(filteredApartments);
+    props.filteredApartment.push(...filteredApartments);
   };
   const toggleClick = (apartment) => {
     if (props.favoritesList.some((e) => e.id === apartment.id)) {
-        props.removeFavorite(apartment.id)
-      
+      props.removeFavorite(apartment.id);
     } else {
-     props.addFavorite(apartment)
+      props.addFavorite(apartment);
     }
   };
   return (
     <Layout>
       <Layout>
         <Content style={{ padding: "0 50px" }}>
-      <SearchSortContainer filter={handleChange} />
-      <ApartmentsContainer  toggleClick={toggleClick}/>
-      </Content>
+          <SearchSortContainer filter={handleChange} />
+          <ApartmentsContainer toggleClick={toggleClick} />
+        </Content>
       </Layout>
       <Footer style={{ textAlign: "center" }}>
         Armenian First Rent Company . All Rights Reserved. © 2021

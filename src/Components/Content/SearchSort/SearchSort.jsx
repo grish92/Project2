@@ -6,16 +6,14 @@ import "../../../style.css";
 
 const { Option } = Select;
 export const SearchSort = (props) => {
-  
   const [city, setCity] = useState(null);
   const [district, setDistrict] = useState(null);
   const [price, setPrice] = useState(null);
   const [rooms, setRooms] = useState(null);
 
-  const handleChange=()=> {
-
-    props.filter(city, district,price,rooms);
-  }
+  const handleChange = () => {
+    props.filter(city, district, price, rooms);
+  };
   return (
     <div className="searchSort">
       <div>

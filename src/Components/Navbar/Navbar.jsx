@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import "../../style.css";
 import apartament_logo from "../../images/apartament_logo.png";
 
@@ -9,7 +8,7 @@ import {
   MailOutlined,
   UnlockOutlined,
 } from "@ant-design/icons";
-import { Menu, Dropdown, Layout, message, Space } from "antd";
+import { Menu, Dropdown, Layout, message, Space, Button } from "antd";
 
 export const NavBar = (props) => {
   console.log(props);
@@ -50,6 +49,13 @@ export const NavBar = (props) => {
               <Link to={`/${menu.to}`}>{menu.label}</Link>
             </Menu.Item>
           ))}
+          <Menu.Item key="addAnnouncement" style={{ marginLeft: "auto" }}>
+            <Link to="/addAnnouncement">
+              <Space wrap>
+                <Button type="primary">Add Announcement</Button>
+              </Space>
+            </Link>
+          </Menu.Item>
           <Menu.Item key="myprofile" style={{ marginLeft: "auto" }}>
             <Link to="/myprofile">
               <Space wrap>

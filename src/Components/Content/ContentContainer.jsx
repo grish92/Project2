@@ -7,19 +7,17 @@ import {
 } from "../../ReduxStore/action";
 
 let mapStateToProps = (state) => {
-    console.log(state)
+  console.log(state);
   return {
     apartments: state.Content.apartmentsAll,
     favoritesList: state.Content.favoritList,
-    priceFilterMap:state.Content.priceFilterMap,
-    filteredApartment:state.Content.filteredApartment
-
+    priceFilterMap: state.Content.priceFilterMap,
+    filteredApartment: state.Content.filteredApartment,
   };
 };
 
 let mapDispatchToProps = (dispatch) => {
   return {
-      
     addFavorite: (apartment) => {
       dispatch(createAddFavorite(apartment));
     },
@@ -32,8 +30,8 @@ let mapDispatchToProps = (dispatch) => {
   };
 };
 
-export const ContentContainer= connect(
-    mapStateToProps,
+export const ContentContainer = connect(
+  mapStateToProps,
   mapDispatchToProps
 )(HomeContent);
-// export default ContentContainer
+

@@ -1,17 +1,10 @@
 import { connect } from "react-redux";
 import { NavBar } from "./Navbar";
 
-
-
-
-let mapStateToProps=(state)=>{
+let mapStateToProps = (state) => {
   return {
-   menuItems:state.Navbar.user
-  }
+    menuItems: state.Navbar.user,
+  };
+};
 
-}
-
-export const NavbarContainer = connect(
-  mapStateToProps,
-
-)(NavBar);
+export const NavbarContainer = connect(mapStateToProps)(NavBar);

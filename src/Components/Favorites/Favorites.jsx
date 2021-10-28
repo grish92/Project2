@@ -17,7 +17,6 @@ export const Favorites = (props) => {
             return (
               <Card.Grid hoverable={false} style={gridStyle} key={apartment.id}>
                 <Card
-                  
                   title={"APARTMENT CODE - " + apartment.id}
                   style={{ width: 320 }}
                 >

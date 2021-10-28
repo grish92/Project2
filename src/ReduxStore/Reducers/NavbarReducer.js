@@ -1,7 +1,7 @@
 let initialState = {
   user: [
     {
-      id:1,
+      id: 1,
       to: "home",
       label: "Home",
     },
@@ -12,8 +12,8 @@ let initialState = {
     },
     {
       id: 3,
-      to: "notifications",
-      label: "Notifications",
+      to: "userannouncements",
+      label: "User Announcements",
     },
   ],
 };
