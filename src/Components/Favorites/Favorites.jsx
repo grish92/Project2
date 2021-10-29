@@ -14,7 +14,7 @@ export const Favorites = (props) => {
     <Layout>
       <Layout>
         <Content style={{ padding: "0 50px" }}>
-          <NavbarContainer/>
+          <NavbarContainer />
           {props.favorites.map((apartment) => {
             return (
               <Card.Grid hoverable={false} style={gridStyle} key={apartment.id}>

@@ -38,7 +38,7 @@ export const LoginRegister = () => {
 
           <Menu.Item>
             <Button type="primary" onClick={showModal}>
-              Open Modal
+              LogIn
             </Button>
             <Modal
               className="modal"
@@ -52,13 +52,13 @@ export const LoginRegister = () => {
           </Menu.Item>
         </Menu>
         <Layout>
-        <Content style={{ padding: "0 50px" }}>
-           <ApartmentsContainer />
-        </Content>
-      </Layout>
-      <Footer style={{ textAlign: "center" }}>
-        Armenian First Rent Company . All Rights Reserved. © 2021
-      </Footer>
+          <Content style={{ padding: "0 50px" }}>
+            <ApartmentsContainer />
+          </Content>
+        </Layout>
+        <Footer style={{ textAlign: "center" }}>
+          Armenian First Rent Company . All Rights Reserved. © 2021
+        </Footer>
       </Layout>
     </>
   );

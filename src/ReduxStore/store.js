@@ -12,7 +12,7 @@ const reducers = combineReducers({
   SingleApartment: SingleApartmentReducer,
   Announcement: AddAnnouncementReducer,
   token: TokenReducer,
-  user: UserReducer
+  user: UserReducer,
 });
 
 let store = createStore(reducers);

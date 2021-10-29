@@ -19,14 +19,11 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         {user ? (
-         <NavbarContainer />
+          <NavbarContainer />
         ) : (
           <Route path="/" render={() => <LoginRegister />} exact />
         )}
         <div>
-          <div>
-            
-          </div>
           <Route path="/register" render={() => <Register />} />
           <Route path="/home" render={() => <ContentContainer />} />
           <Route path="/favorites" render={() => <FavoritesContainer />} />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../../style.css";
-import { Form, Input, Button} from "antd";
+import { Form, Input, Button } from "antd";
 
 const formItemLayout = {
   labelCol: {
@@ -65,7 +65,7 @@ export const Register = () => {
 
   return (
     <>
-    <div className="login_page_logo"></div>
+      <div className="login_page_logo"></div>
       <Form
         className="registration-form"
         {...formItemLayout}

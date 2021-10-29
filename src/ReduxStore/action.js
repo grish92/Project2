@@ -71,7 +71,7 @@ export const createDeleteFavorite = () => ({
 export const SET_USER = "SET_USER";
 export const createSetUser = (user) => ({
   type: SET_USER,
-  payload: { user },
+  user,
 });
 export const REMOVE_USER = "REMOVE_USER";
 
@@ -82,7 +82,7 @@ export const createRemoveUser = () => ({
 export const SET_TOKEN = "SET_TOKEN";
 export const createSetTokens = (token) => ({
   type: SET_TOKEN,
-  payload: { token },
+  token,
 });
 
 export const REMOVE_TOKENS = "REMOVE_TOKENS";
