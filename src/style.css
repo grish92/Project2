@@ -1,11 +1,28 @@
 .login-form {
   min-width: 330px;
   position: absolute;
-  top: 45%;
-  left: 50%;
+  top: 60%;
+  right: 52%;
   transform: translate(-50%, -50%);
 }
+.ant-modal {
+  width: 100%;
+  transform-origin: 85px 43px;
+  overflow: hidden;
+  height: -webkit-fill-available;
+}
+.ant-modal-content {
+  width: 80vw;
 
+  height: calc(60vh - 20px) !important;
+  top: 20%;
+}
+.ant-modal-centered::before {
+  content: unset;
+}
+.ant-modal-footer {
+  display: none;
+}
 .login-form-forgot {
   float: right;
 }
@@ -31,17 +48,17 @@
   padding: 24px;
   background: #fff;
 }
-#components-layout-demo-top .logo {
+/* #components-layout-demo-top .logo {
   float: left;
   width: 120px;
   height: 31px;
   margin: 16px 24px 16px 0;
   background: rgba(255, 255, 255, 0.3);
-}
-.ant-row-rtl #components-layout-demo-top .logo {
+} */
+/* .ant-row-rtl #components-layout-demo-top .logo {
   float: right;
   margin: 16px 0 16px 24px;
-}
+} */
 .searchSort {
   display: flex;
   align-items: center;
@@ -53,14 +70,14 @@
   border-radius: 15px;
 }
 
-.login_page_logo {
+/* .login_page_logo {
   overflow: hidden;
   height: 730px;
   background: url(../src/images/login.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100% 100%;
-}
+} */
 
 .menu {
   height: 50px;

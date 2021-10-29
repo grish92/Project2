@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Layout } from "antd";
 import { currencySign } from "../utils";
+import { NavbarContainer } from "../Navbar/NavbarContainer";
 const { Footer, Content } = Layout;
 
 const gridStyle = {
@@ -13,6 +14,7 @@ export const Favorites = (props) => {
     <Layout>
       <Layout>
         <Content style={{ padding: "0 50px" }}>
+          <NavbarContainer/>
           {props.favorites.map((apartment) => {
             return (
               <Card.Grid hoverable={false} style={gridStyle} key={apartment.id}>

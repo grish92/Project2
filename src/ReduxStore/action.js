@@ -67,3 +67,26 @@ export const DELETE_ALL = "DELETE_ALL";
 export const createDeleteFavorite = () => ({
   type: DELETE_ALL,
 });
+
+export const SET_USER = "SET_USER";
+export const createSetUser = (user) => ({
+  type: SET_USER,
+  payload: { user },
+});
+export const REMOVE_USER = "REMOVE_USER";
+
+export const createRemoveUser = () => ({
+  type: REMOVE_USER,
+});
+
+export const SET_TOKEN = "SET_TOKEN";
+export const createSetTokens = (token) => ({
+  type: SET_TOKEN,
+  payload: { token },
+});
+
+export const REMOVE_TOKENS = "REMOVE_TOKENS";
+
+export const createRemoveTokens = () => ({
+  type: REMOVE_TOKENS,
+});

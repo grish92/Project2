@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, Form, Button, Card } from "antd";
 
 import { currencySign } from "../utils";
+import { NavbarContainer } from "../Navbar/NavbarContainer";
 const { Footer, Content } = Layout;
 const layout = {
   labelCol: {
@@ -22,7 +23,9 @@ export const UserAnnouncement = (props) => {
   return (
     <Layout>
       <Layout>
-        <Content style={{ padding: "0 50px" }}></Content>
+        <Content style={{ padding: "0 50px" }}>
+          <NavbarContainer/>
+        </Content>
       </Layout>
       <div>
         {props.myAnnouncements.map((apartment) => {

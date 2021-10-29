@@ -1,5 +1,6 @@
 import { Carousel, Layout, Table } from "antd";
 import React from "react";
+import { NavbarContainer } from "../Navbar/NavbarContainer";
 
 const { Footer, Content } = Layout;
 let onChange = (a, b, c) => {
@@ -29,6 +30,7 @@ export const SingleApartmentPage = (props) => {
     <Layout>
       <Layout>
         <Content style={{ padding: "0 50px" }}>
+          <NavbarContainer/>
           <Carousel afterChange={onChange}>
             {arr.map((e) => (
               <div key={e.id}>

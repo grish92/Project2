@@ -9,14 +9,25 @@ import { SingleApartmentPageContainer } from "./Components/SingleApartmentPage/S
 import { MyProfile } from "./Components/MyProfile/MyProfile";
 import { AddAnnouncementContainer } from "./Components/AddAnnouncement/AddAnnouncementContainer";
 import { UserAnnouncementContainer } from "./Components/UserAnnouncements/UserAnnouncementsContainer";
+import { LoginRegister } from "./Components/Login&&Register/LoginRegister";
+import { Register } from "./Components/Login&&Register/Register/Register";
+import { useSelector } from "react-redux";
 
 const App = () => {
+  const user = useSelector((state) => state.user);
   return (
     <BrowserRouter>
       <div className="App">
-        <NavbarContainer />
-
+        {user ? (
+         <NavbarContainer />
+        ) : (
+          <Route path="/" render={() => <LoginRegister />} exact />
+        )}
         <div>
+          <div>
+            
+          </div>
+          <Route path="/register" render={() => <Register />} />
           <Route path="/home" render={() => <ContentContainer />} />
           <Route path="/favorites" render={() => <FavoritesContainer />} />
           <Route

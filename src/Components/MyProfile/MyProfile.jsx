@@ -2,6 +2,7 @@ import { Avatar, Card, Layout } from "antd";
 import { UserOutlined, MailTwoTone, PhoneTwoTone } from "@ant-design/icons";
 import { Form, Input, Button } from "antd";
 import { useState } from "react";
+import { NavbarContainer } from "../Navbar/NavbarContainer";
 const { Footer, Content } = Layout;
 
 const layout = {
@@ -30,6 +31,7 @@ export const MyProfile = () => {
     <Layout>
       <Layout>
         <Content style={{ padding: "0 50px" }}>
+          <NavbarContainer/>
           <div style={{ display: "flex", margin: "auto" }}>
             <Avatar
               shape="square"

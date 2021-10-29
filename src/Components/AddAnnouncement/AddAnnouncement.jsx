@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Input, Button, Layout } from "antd";
+import { NavbarContainer } from "../Navbar/NavbarContainer";
 
 const { Footer, Content } = Layout;
 
@@ -45,6 +46,7 @@ export const AddAnnouncement = (props) => {
     <Layout>
       <Layout>
         <Content style={{ padding: "0 50px" }}>
+          <NavbarContainer/>
           <Form
             {...layout}
             name="nest-messages"

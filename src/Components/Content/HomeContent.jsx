@@ -1,5 +1,6 @@
 import { Layout } from "antd";
 import React from "react";
+import { NavbarContainer } from "../Navbar/NavbarContainer";
 
 import { ApartmentsContainer } from "./Apartments/ApartmentsContainer";
 
@@ -45,6 +46,7 @@ export const HomeContent = (props) => {
     <Layout>
       <Layout>
         <Content style={{ padding: "0 50px" }}>
+          <NavbarContainer/>
           <SearchSortContainer filter={handleChange} />
           <ApartmentsContainer toggleClick={toggleClick} />
         </Content>
